@@ -1,46 +1,34 @@
-# GWA Verifier
+<h1 align='center'>
+    GWA Verifier
+</h1>
 
-GWA Verifier is a web application that records and verifies students' grades, and determines the students that are eligible for scholarships and awards.
+<p align='center'>
+    A web application that records and verifies students' grades, and determines the students that are eligible for scholarships and awards.
+</p>
 
-This app is created for the College of Arts and Sciences (CAS) Scholarships, Honors, and Awards Committee (SHAC) under the University of the Philippines.
+![shots](/docs/shots.png?raw=true)
 
-## Development Environment
+This app is intended for the use of College of Arts and Sciences (CAS) Scholarships, Honors, and Awards Committee (SHAC) under the University of the Philippines Los Baños (UPLB).
 
-Do the following steps:
+## Features
 
-```bash
-# Run the Flask server on development mode
-cd backend
-python -m venv venv               # If venv folder is not yet created
-. venv/Scripts/activate           # If virtual environment is not yet activated
-pip install -r requirements.txt   # If dependencies in requirements.txt are not yet installed in virtual environment
-export FLASK_ENV=development      # If FLASK_ENV is not yet set in the current terminal session
-flask run
+&nbsp; &nbsp; :sparkles: Accepts student records from spreadsheets and CSVs
 
-# Start the React application
-cd ../frontend
-npm install                       # If dependencies in package.json are not yet installed
-npm run dev
-```
+&nbsp; &nbsp; :sparkles: Detects inconsistencies in student records
 
-Open http://localhost:3000
+&nbsp; &nbsp; :sparkles: Prints student records in PDF format
 
-## Production Environment
+&nbsp; &nbsp; :sparkles: Logs user activity for data monitoring and security
 
-Do the following steps:
+## Technologies
 
-```bash
-# Run the Flask server
-cd backend
-python -m venv venv               # If venv folder is not yet created
-. venv/Scripts/activate           # If virtual environment is not yet activated
-pip install -r requirements.txt   # If dependencies in requirements.txt are not yet installed in virtual environment
-flask run
+### Client
 
-# Build the React application (if changes are not yet built or the dist folder is not yet created) 
-cd ../frontend
-npm install                       # If dependencies in package.json are not yet installed
-npm run build
-```
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-Open http://localhost:5000
+### Server
+
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
